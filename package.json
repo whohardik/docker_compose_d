@@ -3,6 +3,14 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --compile --outfile dist/index",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "prisma:studio": "prisma studio"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -11,6 +19,7 @@
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.7.0",
+    "@prisma/client": "^7.7.0",
     "@types/express": "^5.0.6",
     "express": "^5.2.1",
     "prisma": "^7.7.0"

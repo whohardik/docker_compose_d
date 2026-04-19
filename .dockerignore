@@ -1,0 +1,8 @@
+node_modules
+.git
+.claude
+dist
+.env
+bun.lock (not needed in context after copy)
+README.md
+contribute.md
